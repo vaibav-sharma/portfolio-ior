@@ -1,0 +1,11 @@
+.app__body {
+    display: flex;
+}
+
+.app__header {
+}
+
+.app__info {
+    background-color: #eff2f5;
+    
+}

@@ -1,0 +1,10 @@
+.header__broad {
+    background-color:#232f3e;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__broad > h1 {
+    color: goldenrod;
+}
