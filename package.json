@@ -1,7 +1,11 @@
 {
   "name": "portfolio-app",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://github.com/vaibav-sharma/portfolio-ior.git",
+=======
+  "homepage": "https://vaibav-sharma.github.io/portfolio-ior/",
+>>>>>>> f47ed1786f4e984d6efc6cc1de61532488e072f8
   "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
