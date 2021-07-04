@@ -1,17 +1,17 @@
 .portFront {
-    padding: 5px 10px;
-    justify-content: space-evenly;
-    background-color: white;
-    z-index: 100;
-    box-shadow: 0px 5px 16px -9px rgba(0, 0, 0, 0.75);
-
+  padding: 5px 10px;
+  justify-content: space-evenly;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0px 5px 16px -9px rgba(0, 0, 0, 0.75);
+  height: 100vh;
 }
 
 .click__page {
-    height: 180px;
-    width: 90px;
-    position: absolute;
-    margin: auto;
-    top: 390px;
-    left: 439px;
+  height: 180px;
+  width: 90px;
+  position: absolute;
+  margin: auto;
+  top: 390px;
+  left: 439px;
 }
