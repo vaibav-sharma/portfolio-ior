@@ -1,10 +1,14 @@
 .header__broad {
-    background-color:#232f3e;
-    display: flex;
-    justify-content: center;
-
+  background-color: #232f3e;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: auto;
+  height: 65px;
+  box-shadow: 0px 15px 500x -9px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
 .header__broad > h1 {
-    color: goldenrod;
+  color: goldenrod;
 }

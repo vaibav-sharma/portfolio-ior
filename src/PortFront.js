@@ -4,9 +4,11 @@ import Header2 from "./Header2"
 import "./PortFront.css"
 import Reel2 from "./Reel2"
 import Fade from 'react-reveal/Fade';
-import { Route, Link } from "react-router-dom"
 import Portfolio from "./Portfolio"
 import Facebook from "./Facebook"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Amazon from "./amazon-app/Amazon"
+
 
 
 
@@ -17,12 +19,32 @@ function PortFront() {
     return (
         <div className="portFront">
            
-        
+       {/* 
         {
             show?<Portfolio /> :<Facebook />
         }
         <div className="click__page" onClick={()=>setShow(!show)}/>
-          </div>
+        */}
+
+
+        <Router>
+        <div className="appAll">
+        <Switch>
+            <Route path="/amazon">
+                <Amazon />
+            </Route>
+            <Route path="/facebook">
+                <Facebook />
+            </Route>
+            <Route path="/">
+                <Portfolio />
+            </Route>
+
+            
+        </Switch>
+        </div>
+        </Router>
+        </div>
     )
 }
 
