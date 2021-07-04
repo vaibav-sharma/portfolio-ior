@@ -1,7 +1,19 @@
 .reel2 {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .reel2 {
+    display: grid;
+    padding: 35px;
+    gap: 10px;
+
+    flex-direction: column;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
+    align-items: center;
+  }
+}
