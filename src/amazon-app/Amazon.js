@@ -3,10 +3,12 @@ import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Header from "./HeaderAm";
 import Home from "./Home"
+import { HashRouter, Link } from "react-router-dom";
+
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="app">
         <Switch>
           <Route path="/checkout">
@@ -21,7 +23,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

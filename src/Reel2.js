@@ -53,7 +53,7 @@ function Reel2() {
                 profileSrc="https://i.pinimg.com/originals/1e/0e/8e/1e0e8eb4ee2d82681adaa4c61909ab4c.jpg"
                 title="App"
                 />    
-              </Link>
+            </Link>
           <Fade bottom>
               <Link to="/netflix">
                 <Story 
