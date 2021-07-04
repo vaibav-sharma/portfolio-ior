@@ -7,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 import Portfolio from "./Portfolio"
 import Facebook from "./Facebook"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter, Link } from "react-router-dom";
 import Amazon from "./amazon-app/Amazon"
 
 
@@ -27,7 +28,7 @@ function PortFront() {
         */}
 
 
-        <Router>
+        <HashRouter basename="/">
         <div className="appAll">
         <Switch>
             <Route path="/amazon">
@@ -43,7 +44,7 @@ function PortFront() {
             
         </Switch>
         </div>
-        </Router>
+        </HashRouter>
         </div>
     )
 }
