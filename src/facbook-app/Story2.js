@@ -1,6 +1,5 @@
 import { Avatar } from "@material-ui/core";
 import React, {useState} from "react";
-import "./Story2.css";
 import HeadShake from 'react-reveal/HeadShake'
 import Fade from 'react-reveal/Fade'
 

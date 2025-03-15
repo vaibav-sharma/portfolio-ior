@@ -1,8 +1,5 @@
 import React from "react"
 import Story from "./Story";
-import "./Reel.css";
-import { Route, Link } from "react-router-dom";
-
 
 function Reel() {
     return (

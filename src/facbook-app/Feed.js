@@ -1,6 +1,5 @@
 import React from "react"
 import MessageSender from "./MessageSender";
-import "./Feed.css"
 import Reel from "./Reel"
 import Post from "./Post"
 

@@ -1,5 +1,26 @@
-
-
 .app {
   background-color: #f1f2f5;
+}
+.cards {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    display: grid;
+    padding: 35px;
+    gap: 10px;
+
+    flex-direction: column;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.enter__deets{
+  display: flex
 }
