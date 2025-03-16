@@ -8,9 +8,9 @@ import Cards from "./Cards";
 export default function Portfolio() {
   return (
     <div class="page">
-      <div class="header">
+      {/* <div class="header">
         <Header2 />
-      </div>
+      </div> */}
 
       <div className="content__middle">
         <Avatar
