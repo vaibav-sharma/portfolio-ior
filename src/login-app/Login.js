@@ -9,7 +9,7 @@ function Login({ onLoginSuccess }) {
   const [rememberMe, setRememberMe] = useState(false);
   const [loginStatus, setLoginStatus] = useState(null); // null, 'success', 'failure'
   const [loginMessage, setLoginMessage] = useState("");
-  let baseURL = "http://localhost:8000";
+  let baseURL = process.env.REACT_APP_BASEURL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -14,7 +14,7 @@ function Register() {
   const [registerStatus, setRegisterStatus] = useState(null); // null, 'success', 'failure'
   const [registerMessage, setRegisterMessage] = useState("");
   const history = useHistory()
-  let baseURL = "http://localhost:8000";
+  let baseURL = process.env.REACT_APP_BASEURL;
 
 
   const handleSubmit = async (e) => {
