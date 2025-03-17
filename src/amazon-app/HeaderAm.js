@@ -8,7 +8,7 @@ function Header() {
     return (
         <nav className="header__amazon">
 
-            <Link to="/checkout">
+            <Link to="/portfolio/amazon">
                 <img className="header__logoAm" src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png" />
             </Link>
             <div className="header__searchAm" >
@@ -16,25 +16,25 @@ function Header() {
                 <SearchIcon className="header__searchIcon" />
             </div>
             <div className="header__nav">
-            <Link to="/login" className="header__link">
+            <Link to="/portfolio/amazon/login" className="header__link">
                 <div className="header__option">
                     <span className="header__optionLineOne" >Hello Vaibav</span>
                     <span className="header__optionLineTwo">Sign In</span>
                 </div>
             </Link>
-            <Link to="/login" className="header__link">
+            <Link to="/portfolio/amazon/orders" className="header__link">
                 <div className="header__option">
                     <span className="header__optionLineOne">Returns</span>
                     <span className="header__optionLineTwo">& Orders</span>
                 </div>
             </Link>
-            <Link to="/login" className="header__link">
+            <Link to="/portfolio/amazon/prime" className="header__link">
                 <div className="header__option">
                     <span className="header__optionLineOne">Your</span>
                     <span className="header__optionLineTwo">Prime</span>
                 </div>
             </Link>
-            <Link to="/checkout">
+            <Link to="/portfolio/amazon/checkout">
                 <div className="header__optionBasket">
                 <ShoppingBasketIcon className="header__basketIcon"/>
                     <span className="header__optionLineTwo header__basketCount">0</span>

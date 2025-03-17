@@ -28,14 +28,14 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <Header2 onLogout={handleLogout} isLoggedIn={isLoggedIn}/>
+        <Header2 onLogout={handleLogout} isLoggedIn={isLoggedIn} />
       </div>
       <BrowserRouter basename="/">
         <Switch>
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/login">
+          <Route exact path="/login">
             {isLoggedIn ? (
               <Redirect to="/portfolio" />
             ) : (
@@ -53,12 +53,39 @@ function App() {
                 <Route path="/portfolio/facebook">
                   <Facebook />
                 </Route>
-                <Route path="/portfolio/amazon">
-                  <Amazon />
-                </Route>
                 <Route path="/portfolio/extras">
                   <Extras />
                 </Route>
+                <PrivateRoute
+                  path="/portfolio/amazon"
+                  isLoggedIn={isLoggedIn}
+                  component={() => (
+                    <Switch>
+                      <Route exact path="/portfolio/amazon">
+                        <Amazon />
+                      </Route>
+                      <Route exact path="/portfolio/amazon/checkout">
+                        <h1>Checkout</h1>
+                      </Route>
+                      <Route exact path="/portfolio/amazon/prime">
+                        <h1>Prime</h1>
+                      </Route>
+                      <Route exact path="/portfolio/amazon/orders">
+                        <h1>Orders</h1>
+                      </Route>
+                      <Route exact path="/portfolio/amazon/login">
+                        <h1>Login Page</h1>
+                      </Route>
+                      <Route path="/portfolio/amazon/*">
+                        {isLoggedIn ? (
+                          <Redirect to="/portfolio/amazon" />
+                        ) : (
+                          <Redirect to="/login" />
+                        )}
+                      </Route>
+                    </Switch>
+                  )}
+                />
                 <Route path="*">
                   <Redirect to="/portfolio" />
                 </Route>
