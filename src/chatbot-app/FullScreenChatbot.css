@@ -1,0 +1,39 @@
+.fullscreen-chatbot-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    z-index: 9999; /* High z-index to overlay other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Adjust the chatbot UI styling as needed */
+  .react-chatbot-kit-chat-container {
+      width: 80%;
+      height: 80%;
+      max-width: 800px;
+      max-height: 600px;
+  }
+
+  .react-chatbot-kit-chat-bot-message{
+    margin-left:0%
+  }
+
+  .react-chatbot-kit-chat-container {
+    width: 97%;
+    height: 80%;
+    max-width: 97vw;
+    max-height: 90vh;
+    margin-left: 1vw
+}
+
+.react-chatbot-kit-chat-inner-container {
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 3px;
+    border-radius: 5px;
+}

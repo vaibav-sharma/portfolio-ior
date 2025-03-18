@@ -11,6 +11,7 @@ import Amazon from "./amazon-app/Amazon";
 import Extras from "./extras-app/Extras";
 import Portfolio from "./portfolio/Portfolio";
 import PrivateRoute from "./route/PrivateRoute";
+import ChatBot from "./chatbot-app/ChatBot";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -52,6 +53,9 @@ function App() {
                 </Route>
                 <Route path="/portfolio/facebook">
                   <Facebook />
+                </Route>
+                <Route path="/portfolio/chat">
+                  <ChatBot />
                 </Route>
                 <Route path="/portfolio/extras">
                   <Extras />

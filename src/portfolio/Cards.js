@@ -48,6 +48,15 @@ function Cards() {
             title="Google"
           />
         </Fade>
+        <Link to="/portfolio/chat">
+          <Fade right>
+            <Story
+              image="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/master/pass/google-logo.jpg"
+              profileSrc="https://api.time.com/wp-content/uploads/2015/02/180490609.jpg"
+              title="ChatBot"
+            />
+          </Fade>
+        </Link>
         <Link to="/portfolio/extras">
           <Fade right>
             <Story
